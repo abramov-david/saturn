@@ -1,5 +1,5 @@
 const mainMenu = document.querySelector(".main_menu");
-const btnMenu = document.querySelector(".header_menu");
+const btnMenu = document.querySelector(".menu");
 
 const openCloseMenu = () => {
   const showMenu = () => {
