@@ -762,14 +762,14 @@
 }
 
 /* mobile size */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 960px) {
   .header,
   .main,
   .footer {
     display: none;
   }
 }
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 960px) {
   .header_mobile,
   .main_mobile,
   .footer_mobile {

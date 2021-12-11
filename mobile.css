@@ -42,7 +42,6 @@
 .mobile_header_phone {
   font-family: "HelveticaNeueCyr-Light";
   font-size: 11px;
-  max-width: 375px;
   background-color: #f6f6f6;
   text-align: right;
   border-bottom: 1px solid #f1f0f0;
@@ -75,7 +74,7 @@
 
 .mobile_header_main .mobile_header_main_bottom input {
   border: 1px solid #dbdbdb;
-  width: 235px;
+  width: 435px;
   height: 28px;
   background: url("./assets/mobile/header/search.png") no-repeat right;
   padding: 6px 9px;
@@ -168,6 +167,7 @@ span > a {
 .main_mobile .delivery_price {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 0px 13px 0px 27px;
 }
 
@@ -263,7 +263,6 @@ span > a {
 /* footer-mobile */
 .footer_mobile {
   margin-top: 10px;
-  max-width: 375px;
   height: 135px;
   background-image: url("./assets/mobile/footer/mobile_footer.png");
 }
@@ -272,7 +271,7 @@ span > a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 14px;
+  padding: 16px 10px;
 }
 
 .footer_mobile .pay_card a {
@@ -285,12 +284,18 @@ span > a {
 
 /* Footer links */
 .mobile_footer_links {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 67px;
-  row-gap: 17px;
+  display: flex;
+  justify-content: space-between;
   padding: 16px 21px 16px 10px;
-  justify-content: center;
+  text-align: left;
+  align-items: center;
+}
+
+.mobile_footer_links div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 17px;
 }
 .mobile_footer_links a {
   font-family: "HelveticaNeueCyr-Light";
@@ -299,16 +304,22 @@ span > a {
 }
 
 /* Mini size fix*/
-@media screen and (max-width: 365px) {
-  .delivery_price {
-    flex-direction: column;
-  }
+@media screen and (max-width: 586px) {
   .mobile_header_main_bottom {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
   }
+  .mobile_header_main .mobile_header_main_bottom input {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 365px) {
+  .delivery_price {
+    flex-direction: column;
+  }
+
   .site_map {
     flex-direction: column;
   }
