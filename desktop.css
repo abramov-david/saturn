@@ -443,8 +443,9 @@
 .main .main_content .delivery_types .row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 18px 20px 20px 30px;
+  justify-content: space-evenly;
+  gap: 80px;
+  padding: 20px 20px 20px 40px;
   margin: 0px 65px;
   border: 1px solid #d5d5d5;
   text-align: justify;
