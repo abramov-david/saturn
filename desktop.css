@@ -198,12 +198,7 @@
   letter-spacing: 1px;
 }
 
-.navbar .menu .header_menu .triangle {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 8px solid #010c2c;
+.navbar .menu .header_menu img {
   margin-left: 77px;
 }
 .dropdown {

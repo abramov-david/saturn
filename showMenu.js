@@ -1,6 +1,7 @@
 const mainMenu = document.querySelector(".main_menu");
-const btnMenu = document.querySelector(".menu");
+const btnMenu = document.getElementById("menuBtn");
 
+console.log(btnMenu);
 const openCloseMenu = () => {
   const showMenu = () => {
     mainMenu.style.display = "block";
@@ -8,7 +9,7 @@ const openCloseMenu = () => {
   btnMenu.addEventListener("click", showMenu);
 
   document.onclick = function (event) {
-    if (event.target.className != "header_menu") {
+    if (event.target.id != "menuBtn") {
       mainMenu.style.display = "none";
     }
   };
