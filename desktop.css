@@ -443,8 +443,7 @@
 .main .main_content .delivery_types .row {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 80px;
+  justify-content: space-between;
   padding: 20px 20px 20px 40px;
   margin: 0px 65px;
   border: 1px solid #d5d5d5;
@@ -775,5 +774,14 @@
   .main_mobile,
   .footer_mobile {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main .main_content .delivery_types .row {
+    font-size: 12px;
+  }
+  .main .main_content .delivery_types .row h3 {
+    font-size: 13px;
   }
 }
